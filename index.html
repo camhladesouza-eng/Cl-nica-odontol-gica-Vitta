@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#082D68">
-<meta name="description" content="Vitta Centro Médico e Odontológico em Bocaiúva, MG. Entre em contato e agende seu atendimento.">
-<title>Vittê | Centro Médico e Odontológico</title>
+<meta name="description" content="Vitta Centro Médico e Odontológico em Bocaiúva, MG. Entre em contato e agende sua consulta.">
+<title>Vitta | Centro Médico e Odontológico</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,94 +20,97 @@
   --light: #F2F8FC;
   --text: #26374B;
 }
-* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
-body { font-family:'DM Sans',sans-serif; color:var(--text); background:white; }
-a { text-decoration:none; color:inherit; }
-.container { width:90%; max-width:1180px; margin:auto; }
-header { background:var(--navy); color:white; position:sticky; top:0; z-index:1000; box-shadow:0 3px 15px #001b4430; }
-.navbar { min-height:82px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-.logo { font-size:31px; font-weight:800; color:white; letter-spacing:-2px; }
-.logo span { color:var(--cyan); }
-.logo small { display:block; font-size:9px; letter-spacing:1px; font-weight:500; }
-nav { display:flex; align-items:center; gap:24px; }
-nav a { font-size:13px; font-weight:600; transition:.3s; }
-nav a:hover { color:var(--cyan); }
-.btn { display:inline-block; padding:14px 24px; background:var(--cyan); color:var(--navy); border-radius:30px; font-size:14px; font-weight:800; transition:.3s; border:none; cursor:pointer; }
-.btn:hover { background:white; transform:translateY(-3px); }
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; color: var(--text); background: white; }
+a { text-decoration: none; color: inherit; }
+button { font-family: inherit; }
+.container { width: 90%; max-width: 1180px; margin: auto; }
+header { background: var(--navy); color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 15px #001b4430; }
+.navbar { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.logo { font-size: 31px; font-weight: 800; color: white; letter-spacing: -2px; }
+.logo span { color: var(--cyan); }
+.logo small { display: block; font-size: 9px; letter-spacing: 1px; font-weight: 500; }
+nav { display: flex; align-items: center; gap: 24px; }
+nav a { font-size: 13px; font-weight: 600; transition: .3s; }
+nav a:hover { color: var(--cyan); }
+.btn { display: inline-block; padding: 14px 24px; background: var(--cyan); color: var(--navy); border-radius: 30px; font-size: 14px; font-weight: 800; transition: .3s; border: none; cursor: pointer; }
+.btn:hover { background: white; transform: translateY(-3px); }
 .hero {
-  min-height:620px;
-  background:linear-gradient(90deg,#062653ed 0%,#082D68c9 52%,#082D6860 100%),
-  url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=85') center/cover;
-  display:flex; align-items:center; color:white;
+  min-height: 620px;
+  background: linear-gradient(90deg, #062653ed 0%, #082D68c9 52%, #082D6860 100%),
+    url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=85') center/cover;
+  display: flex; align-items: center; color: white;
 }
-.hero-content { max-width:650px; padding:90px 0; }
-.tag { display:inline-block; padding:9px 17px; border:1px solid var(--cyan); color:var(--cyan); border-radius:30px; font-size:12px; font-weight:700; letter-spacing:1px; margin-bottom:25px; }
-.hero h1 { font-family:'Playfair Display',serif; font-size:clamp(38px,6vw,65px); line-height:1.13; margin-bottom:22px; }
-.hero h1 span { color:var(--cyan); }
-.hero p { font-size:17px; line-height:1.8; color:#e3edf9; margin-bottom:30px; max-width:540px; }
-section { padding:85px 0; }
-.section-title { text-align:center; margin-bottom:45px; }
-.section-title span { color:var(--blue); text-transform:uppercase; font-size:12px; font-weight:800; letter-spacing:2px; }
-.section-title h2 { color:var(--navy); font-family:'Playfair Display',serif; font-size:clamp(29px,4vw,42px); margin-top:12px; }
-.section-title p { margin:12px auto 0; max-width:600px; line-height:1.7; color:#6a7889; }
-.about { background:var(--light); }
-.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:55px; align-items:center; }
-.about-image { height:420px; border-radius:25px; background:url('https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=85') center/cover; box-shadow:0 15px 35px #082d6820; }
-.about-text h2 { font-family:'Playfair Display',serif; color:var(--navy); font-size:38px; margin:15px 0; }
-.about-text p { line-height:1.9; color:#647386; margin-bottom:18px; }
-.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
-.service-card { padding:30px 25px; border-radius:18px; border:1px solid #e7eff6; background:white; transition:.3s; }
-.service-card:hover { transform:translateY(-7px); box-shadow:0 15px 35px #082d6815; border-color:var(--cyan); }
-.service-icon { width:55px; height:55px; background:#e4f9fb; border-radius:15px; display:grid; place-items:center; font-size:27px; margin-bottom:20px; }
-.service-card h3 { color:var(--navy); margin-bottom:12px; font-size:18px; }
-.service-card p { color:#718093; line-height:1.7; font-size:14px; }
-.differentials { background:var(--navy); color:white; }
-.differentials .section-title h2 { color:white; }
-.differentials .section-title p { color:#c6d7eb; }
-.differential-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:25px; }
-.differential { text-align:center; padding:30px 20px; }
-.differential .icon { font-size:35px; margin-bottom:18px; }
-.differential h3 { color:var(--cyan); margin-bottom:12px; }
-.differential p { color:#d0dfef; font-size:14px; line-height:1.7; }
-.team-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:25px; }
-.team-card { text-align:center; background:var(--light); border-radius:20px; overflow:hidden; padding-bottom:25px; }
-.team-photo { height:260px; background:linear-gradient(135deg,#d9eef6,#edf6fa); display:grid; place-items:center; color:var(--blue); font-size:65px; }
-.team-card h3 { color:var(--navy); margin:20px 10px 7px; }
-.team-card p { color:#718093; font-size:14px; }
-.gallery { background:var(--light); }
-.gallery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-.gallery-grid img { width:100%; height:250px; object-fit:cover; border-radius:17px; transition:.3s; }
-.gallery-grid img:hover { transform:scale(1.025); }
-.cta { background:linear-gradient(120deg,#082D68,#087FC0); text-align:center; color:white; padding:75px 20px; }
-.cta h2 { font-family:'Playfair Display',serif; font-size:38px; margin-bottom:17px; }
-.cta p { color:#e2f0fa; margin-bottom:28px; line-height:1.7; }
-.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
-.contact-info h3 { color:var(--navy); margin-bottom:22px; font-size:23px; }
-.contact-item { padding:15px 0; border-bottom:1px solid #e8eef4; line-height:1.7; overflow-wrap:anywhere; }
-.contact-item strong { color:var(--blue); display:block; margin-bottom:4px; }
-.contact-item a { color:var(--blue); }
-.map { width:100%; height:330px; border:0; border-radius:20px; background:var(--light); }
-footer { background:#041d46; color:white; padding:45px 0 25px; text-align:center; }
-footer .logo { margin-bottom:15px; display:inline-block; }
-footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
-.footer-bottom { border-top:1px solid #ffffff20; margin-top:30px; padding-top:20px; }
-.whatsapp { position:fixed; right:22px; bottom:22px; width:60px; height:60px; border-radius:50%; background:#20c76a; display:grid; place-items:center; color:white; font-size:29px; z-index:2000; box-shadow:0 5px 20px #0003; transition:.3s; }
-.whatsapp:hover { transform:scale(1.1); }
+.hero-content { max-width: 650px; padding: 90px 0; }
+.tag { display: inline-block; padding: 9px 17px; border: 1px solid #12C5D0; color: var(--cyan); border-radius: 30px; font-size: 12px; font-weight: 700; letter-spacing: 1px; margin-bottom: 25px; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(38px, 6vw, 65px); line-height: 1.13; margin-bottom: 22px; }
+.hero h1 span { color: var(--cyan); }
+.hero p { font-size: 17px; line-height: 1.8; color: #e3edf9; margin-bottom: 30px; max-width: 540px; }
+section { padding: 85px 0; }
+.section-title { text-align: center; margin-bottom: 45px; }
+.section-title span { color: var(--blue); text-transform: uppercase; font-size: 12px; font-weight: 800; letter-spacing: 2px; }
+.section-title h2 { color: var(--navy); font-family: 'Playfair Display', serif; font-size: clamp(29px, 4vw, 42px); margin-top: 12px; }
+.section-title p { margin: 12px auto 0; max-width: 600px; line-height: 1.7; color: #6a7889; }
+.about { background: var(--light); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center; }
+.about-image { height: 420px; border-radius: 25px; background: url('https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=85') center/cover; box-shadow: 0 15px 35px #082d6820; }
+.about-text h2 { font-family: 'Playfair Display', serif; color: var(--navy); font-size: 38px; margin: 15px 0; }
+.about-text p { line-height: 1.9; color: #647386; margin-bottom: 18px; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.service-card { padding: 30px 25px; border-radius: 18px; border: 1px solid #e7eff6; background: white; transition: .3s; }
+.service-card:hover { transform: translateY(-7px); box-shadow: 0 15px 35px #082d6815; border-color: var(--cyan); }
+.service-icon { width: 55px; height: 55px; background: #e4f9fb; border-radius: 15px; display: grid; place-items: center; font-size: 27px; margin-bottom: 20px; }
+.service-card h3 { color: var(--navy); margin-bottom: 12px; font-size: 18px; }
+.service-card p { color: #718093; line-height: 1.7; font-size: 14px; }
+.differentials { background: var(--navy); color: white; }
+.differentials .section-title h2 { color: white; }
+.differentials .section-title p { color: #c6d7eb; }
+.differential-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.differential { text-align: center; padding: 30px 20px; }
+.differential .icon { font-size: 35px; margin-bottom: 18px; }
+.differential h3 { color: var(--cyan); margin-bottom: 12px; }
+.differential p { color: #d0dfef; font-size: 14px; line-height: 1.7; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.team-card { text-align: center; background: var(--light); border-radius: 20px; overflow: hidden; padding-bottom: 25px; }
+.team-photo { height: 260px; background: linear-gradient(135deg, #d9eef6, #edf6fa); display: grid; place-items: center; color: var(--blue); font-size: 65px; }
+.team-card h3 { color: var(--navy); margin: 20px 10px 7px; }
+.team-card p { color: #718093; font-size: 14px; }
+.gallery { background: var(--light); }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.gallery-grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 17px; transition: .3s; }
+.gallery-grid img:hover { transform: scale(1.025); }
+.cta { background: linear-gradient(120deg, #082D68, #087FC0); text-align: center; color: white; padding: 75px 20px; }
+.cta h2 { font-family: 'Playfair Display', serif; font-size: 38px; margin-bottom: 17px; }
+.cta p { color: #e2f0fa; margin-bottom: 28px; line-height: 1.7; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.contact-info h3 { color: var(--navy); margin-bottom: 22px; font-size: 23px; }
+.contact-item { padding: 15px 0; border-bottom: 1px solid #e8eef4; line-height: 1.7; }
+.contact-item strong { color: var(--blue); display: block; margin-bottom: 4px; }
+.contact-link { color: var(--text); text-decoration: underline; text-decoration-color: var(--cyan); text-underline-offset: 3px; }
+.map { width: 100%; height: 330px; border: 0; border-radius: 20px; background: var(--light); }
+footer { background: #041d46; color: white; padding: 45px 0 25px; text-align: center; }
+footer .logo { margin-bottom: 15px; display: inline-block; }
+footer p { color: #b9cde3; font-size: 13px; line-height: 1.8; }
+.footer-social { margin-top: 12px; color: var(--cyan); font-weight: 700; }
+.footer-bottom { border-top: 1px solid #ffffff20; margin-top: 30px; padding-top: 20px; }
+.whatsapp { position: fixed; right: 22px; bottom: 22px; width: 60px; height: 60px; border-radius: 50%; background: #20c76a; display: grid; place-items: center; color: white; font-size: 29px; z-index: 2000; box-shadow: 0 5px 20px #0003; transition: .3s; }
+.whatsapp:hover { transform: scale(1.1); }
 @media(max-width:850px) {
-  nav { display:none; }
-  .about-grid,.contact-grid { grid-template-columns:1fr; }
-  .services-grid,.team-grid,.gallery-grid,.differential-grid { grid-template-columns:repeat(2,1fr); }
-  .hero { min-height:570px; }
+  nav { display: none; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .services-grid, .team-grid, .gallery-grid, .differential-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero { min-height: 570px; }
 }
 @media(max-width:550px) {
-  section { padding:65px 0; }
-  .services-grid,.team-grid,.gallery-grid,.differential-grid { grid-template-columns:1fr; }
-  .hero { min-height:530px; }
-  .hero p { font-size:15px; }
-  .about-image { height:290px; }
-  .gallery-grid img { height:230px; }
-  .cta h2 { font-size:30px; }
-  .navbar > .btn { padding:11px 14px; font-size:12px; }
+  section { padding: 65px 0; }
+  .services-grid, .team-grid, .gallery-grid, .differential-grid { grid-template-columns: 1fr; }
+  .hero { min-height: 530px; }
+  .hero p { font-size: 15px; }
+  .about-image { height: 290px; }
+  .gallery-grid img { height: 230px; }
+  .cta h2 { font-size: 30px; }
+  .navbar { min-height: 72px; }
+  .logo { font-size: 27px; }
 }
 </style>
 </head>
@@ -115,32 +118,41 @@ footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
 <body>
 <header>
   <div class="container navbar">
-    <a href="#inicio" class="logo">Vittê<span>+</span><small>CENTRO MÉDICO - ODONTOLÓGICO</small></a>
+    <a href="#inicio" class="logo">
+      Vitta<span>+</span>
+      <small>CENTRO MÉDICO - ODONTOLÓGICO</small>
+    </a>
     <nav>
-      <a href="#inicio">Início</a><a href="#sobre">A clínica</a><a href="#tratamentos">Tratamentos</a>
-      <a href="#equipe">Equipe</a><a href="#estrutura">Estrutura</a><a href="#contato">Contato</a>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">A clínica</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#estrutura">Estrutura</a>
+      <a href="#contato">Contato</a>
     </nav>
-    <a class="btn" href="https://wa.me/553834800080?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20um%20agendamento." target="_blank" rel="noopener">Agendar consulta</a>
+    <a class="btn" href="https://wa.me/553834800080" target="_blank" rel="noopener">Agendar consulta</a>
   </div>
 </header>
 
 <main>
 <section class="hero" id="inicio">
-  <div class="container"><div class="hero-content">
-    <span class="tag">SEU SORRISO MERECE CUIDADO</span>
-    <h1>Saúde e confiança para transformar o seu <span>sorriso.</span></h1>
-    <p>Na Vittê, você encontra cuidado, atenção e atendimento odontológico pensado para proporcionar mais saúde e bem-estar em cada etapa.</p>
-    <a class="btn" href="https://wa.me/553834800080?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agende sua avaliação →</a>
-  </div></div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="tag">SEU SORRISO MERECE CUIDADO</span>
+      <h1>Saúde e confiança para transformar o seu <span>sorriso.</span></h1>
+      <p>Na Vitta, você encontra cuidado, atenção e atendimento odontológico pensado para proporcionar mais saúde e bem-estar em cada etapa.</p>
+      <a class="btn" href="https://wa.me/553834800080" target="_blank" rel="noopener">Agende sua avaliação →</a>
+    </div>
+  </div>
 </section>
 
 <section class="about" id="sobre">
   <div class="container about-grid">
-    <div class="about-image" role="img" aria-label="Ambiente de clínica odontológica"></div>
+    <div class="about-image"></div>
     <div class="about-text">
       <span class="tag" style="background:#082D68;color:white;">CONHEÇA A VITTÊ</span>
       <h2>Seu cuidado começa aqui.</h2>
-      <p>A Vittê Centro Médico e Odontológico tem como propósito oferecer atendimento com atenção, responsabilidade e compromisso com a saúde de cada paciente.</p>
+      <p>A Vitta Centro Médico e Odontológico tem como propósito oferecer atendimento com atenção, responsabilidade e compromisso com a saúde de cada paciente.</p>
       <p>Nosso objetivo é proporcionar uma experiência acolhedora, com profissionais qualificados e cuidado em cada detalhe.</p>
       <a href="https://wa.me/553834800080" class="btn" target="_blank" rel="noopener">Fale com nossa equipe</a>
     </div>
@@ -149,7 +161,11 @@ footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
 
 <section id="tratamentos">
   <div class="container">
-    <div class="section-title"><span>Nossos serviços</span><h2>Cuidados para o seu sorriso</h2><p>Conheça alguns dos tratamentos odontológicos disponíveis em nossa clínica.</p></div>
+    <div class="section-title">
+      <span>Nossos serviços</span>
+      <h2>Cuidados para o seu sorriso</h2>
+      <p>Conheça alguns dos tratamentos odontológicos disponíveis em nossa clínica.</p>
+    </div>
     <div class="services-grid">
       <div class="service-card"><div class="service-icon">🦷</div><h3>Limpeza dental</h3><p>Cuidados preventivos para manter a saúde bucal em dia.</p></div>
       <div class="service-card"><div class="service-icon">✨</div><h3>Clareamento dental</h3><p>Tratamentos para melhorar a aparência e a tonalidade dos dentes.</p></div>
@@ -159,14 +175,18 @@ footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
       <div class="service-card"><div class="service-icon">🩵</div><h3>Restauração dental</h3><p>Tratamentos para recuperar dentes danificados.</p></div>
       <div class="service-card"><div class="service-icon">🦷</div><h3>Tratamento de canal</h3><p>Cuidados para tratar problemas que atingem a polpa dentária.</p></div>
       <div class="service-card"><div class="service-icon">👩‍⚕️</div><h3>Prevenção</h3><p>Acompanhamento odontológico e orientação sobre saúde bucal.</p></div>
-      <div class="service-card"><div class="service-icon">❤️</div><h3>Avaliação odontológica</h3><p>Avaliação individualizada e planejamento de tratamentos.</p></div>
+      <div class="service-card"><div class="service-icon">❤️</div><h3>Atendimento odontológico</h3><p>Avaliação individualizada e planejamento de tratamentos.</p></div>
     </div>
   </div>
 </section>
 
 <section class="differentials">
   <div class="container">
-    <div class="section-title"><span>Nosso compromisso</span><h2>Por que escolher a Vittê?</h2><p>Uma experiência de atendimento que valoriza você.</p></div>
+    <div class="section-title">
+      <span>Nosso compromisso</span>
+      <h2>Por que escolher a Vitta?</h2>
+      <p>Uma experiência de atendimento que valoriza você.</p>
+    </div>
     <div class="differential-grid">
       <div class="differential"><div class="icon">💙</div><h3>Atendimento humanizado</h3><p>Atenção e acolhimento em todas as etapas do atendimento.</p></div>
       <div class="differential"><div class="icon">🩺</div><h3>Profissionais qualificados</h3><p>Compromisso com a qualidade e a responsabilidade profissional.</p></div>
@@ -177,7 +197,11 @@ footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
 
 <section id="equipe">
   <div class="container">
-    <div class="section-title"><span>Quem cuida de você</span><h2>Nossa equipe</h2><p>Conheça os profissionais responsáveis pelo cuidado e atendimento dos nossos pacientes.</p></div>
+    <div class="section-title">
+      <span>Quem cuida de você</span>
+      <h2>Nossa equipe</h2>
+      <p>Conheça os profissionais responsáveis pelo cuidado e atendimento dos nossos pacientes.</p>
+    </div>
     <div class="team-grid">
       <div class="team-card"><div class="team-photo">👩‍⚕️</div><h3>Nome do profissional</h3><p>Especialidade | CRO</p></div>
       <div class="team-card"><div class="team-photo">👨‍⚕️</div><h3>Nome do profissional</h3><p>Especialidade | CRO</p></div>
@@ -188,7 +212,11 @@ footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
 
 <section class="gallery" id="estrutura">
   <div class="container">
-    <div class="section-title"><span>Conheça nosso espaço</span><h2>Estrutura e conforto</h2><p>Um ambiente preparado para receber você com cuidado e atenção.</p></div>
+    <div class="section-title">
+      <span>Conheça nosso espaço</span>
+      <h2>Estrutura e conforto</h2>
+      <p>Um ambiente preparado para receber você com cuidado e atenção.</p>
+    </div>
     <div class="gallery-grid">
       <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Consultório odontológico">
       <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Atendimento odontológico">
@@ -201,23 +229,47 @@ footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
   <div class="container">
     <h2>Está na hora de cuidar do seu sorriso?</h2>
     <p>Entre em contato com nossa equipe e agende sua avaliação.</p>
-    <a href="https://wa.me/553834800080?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn" target="_blank" rel="noopener">Quero agendar minha consulta →</a>
+    <a href="https://wa.me/553834800080" class="btn" target="_blank" rel="noopener">Quero agendar minha consulta →</a>
   </div>
 </section>
 
 <section id="contato">
   <div class="container">
-    <div class="section-title"><span>Estamos esperando por você</span><h2>Entre em contato</h2><p>Será um prazer atender você.</p></div>
+    <div class="section-title">
+      <span>Estamos esperando por você</span>
+      <h2>Entre em contato</h2>
+      <p>Será um prazer atender você.</p>
+    </div>
     <div class="contact-grid">
       <div class="contact-info">
-        <h3>Fale com a Vittê</h3>
-        <div class="contact-item"><strong>📍 Endereço</strong>Av. Francisco Dumond, Bocaiúva - MG, 39390-000, Brasil</div>
-        <div class="contact-item"><strong>📱 WhatsApp / Telefone</strong><a href="https://wa.me/553834800080" target="_blank" rel="noopener">(38) 3480-0080</a></div>
-        <div class="contact-item"><strong>🕒 Horário de funcionamento</strong>Consulte nossos horários pelo WhatsApp.</div>
-        <div class="contact-item"><strong>📸 Instagram</strong><a href="https://www.instagram.com/clinica.vitta.boc/" target="_blank" rel="noopener">@clinica.vitta.boc</a></div>
-        <a href="https://wa.me/553834800080?text=Ol%C3%A1!%20Gostaria%20de%20saber%20os%20hor%C3%A1rios%20de%20atendimento." class="btn" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <h3>Fale com a Vitta</h3>
+        <div class="contact-item">
+          <strong>📍 Endereço</strong>
+          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=Av.+Francisco+Dumond%2C+Bocai%C3%BAva%2C+MG%2C+39390-000" target="_blank" rel="noopener">
+            Av. Francisco Dumond - Bocaiúva, MG, 39390-000, Brasil
+          </a>
+        </div>
+        <div class="contact-item">
+          <strong>📱 WhatsApp</strong>
+          <a class="contact-link" href="https://wa.me/553834800080" target="_blank" rel="noopener">(38) 3480-0080</a>
+        </div>
+        <div class="contact-item">
+          <strong>🕒 Horário de funcionamento</strong>
+          Consulte os horários de atendimento pelo WhatsApp.
+        </div>
+        <div class="contact-item">
+          <strong>📸 Instagram</strong>
+          <a class="contact-link" href="https://www.instagram.com/clinica.vitta.boc/" target="_blank" rel="noopener">@clinica.vitta.boc</a>
+        </div>
+        <a href="https://wa.me/553834800080" class="btn" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
       </div>
-      <iframe class="map" src="https://www.google.com/maps?q=Av.%20Francisco%20Dumond%2C%20Bocai%C3%BAva%2C%20MG%2C%2039390-000%2C%20Brasil&output=embed" loading="lazy" title="Mapa da Vittê em Bocaiúva, Minas Gerais" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps?q=Av.+Francisco+Dumond%2C+Bocai%C3%BAva%2C+MG%2C+39390-000&output=embed"
+        loading="lazy"
+        title="Localização da Vitta em Bocaiúva, Minas Gerais"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </div>
 </section>
@@ -225,13 +277,24 @@ footer p { color:#b9cde3; font-size:13px; line-height:1.8; }
 
 <footer>
   <div class="container">
-    <div class="logo">Vittê<span>+</span><small>CENTRO MÉDICO - ODONTOLÓGICO</small></div>
+    <div class="logo">
+      Vitta<span>+</span>
+      <small>CENTRO MÉDICO - ODONTOLÓGICO</small>
+    </div>
     <p>Cuidado, saúde e atenção em cada sorriso.</p>
-    <p><a href="https://www.instagram.com/clinica.vitta.boc/" target="_blank" rel="noopener">@clinica.vitta.boc</a> · Bocaiúva - MG</p>
-    <div class="footer-bottom"><p>©️ 2026 Vittê Centro Médico e Odontológico. Todos os direitos reservados.</p></div>
+    <a class="footer-social" href="https://www.instagram.com/clinica.vitta.boc/" target="_blank" rel="noopener">Instagram: @clinica.vitta.boc</a>
+    <div class="footer-bottom">
+      <p>©️ 2026 Vitta Centro Médico e Odontológico. Todos os direitos reservados.</p>
+      <p>Desenvolvimento de site profissional.</p>
+    </div>
   </div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/553834800080?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Vitt%C3%AA." target="_blank" rel="noopener" aria-label="Fale com a Vittê pelo WhatsApp">☎</a>
+<a class="whatsapp"
+   href="https://wa.me/553834800080"
+   target="_blank"
+   rel="noopener"
+   aria-label="Fale com a Vitta pelo WhatsApp">☎</a>
+
 </body>
 </html>
